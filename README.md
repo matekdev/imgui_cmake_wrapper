@@ -19,6 +19,13 @@ add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_SOURCE_DIR}/${PROJECT_NAME}.cc)
 target_link_libraries(${PROJECT_NAME} imgui_cmake_wrapper)
 ```
 
+## Roadmap
+
+- [ ] Switch from git submodules to CMake FetchContent or ExternalProject where possible for adding internal dependencies to make this more CMake native
+- [ ] Add a system for choosing which backend to build. Would be nice if this could be realized using CMakes components feature.
+- [ ] Add SDL support
+- [ ] Add Vulkan support
+
 ## Contributions
 
 If you want to support this effort and improve the existing configuration or add support for additional backends you are welcome to create a pull request. 
